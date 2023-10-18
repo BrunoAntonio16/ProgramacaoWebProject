@@ -22,22 +22,22 @@ public class GerenciadorTurmas {
     }
     public boolean buscarTurmas(Turma turma){
 
-        for(Curso curso1: this.turmas){
-            if (curso1.getCodigoCurso() == curso.getCodigoCurso()){
+        for(Turma turma1: this.turmas){
+            if (turma1.getCodigoCurso() == turma.getCodigoCurso()){
                 return true;
             }
         }
         return false;
     }
-    public String listarCurso(){
+    public String listarTurmas(){
         String texto = "";
 
-        for(Curso curso1: this.cursos){
-            texto = texto + "Nome: " + curso1.getCodigoCurso();
+        for(Turma turma1: this.turmas){
+            texto = texto + "Codigo da turma: " + turma1.getCodigoCurso();
         }
         return texto;
     }
-    public void removerCurso(Curso curso){
-        this.cursos.remove(curso);
+    public void removerCurso(Turma turma){
+        this.turmas.remove(turma);
     }
 }
