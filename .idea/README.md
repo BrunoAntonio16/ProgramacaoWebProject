@@ -1,0 +1,1 @@
+Este repositorio pertence ao projeto de programacao web baseado em um sistema escolar
